@@ -1,0 +1,23 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+ }
+ 
+ :root {
+    --color-primary: rgb(251, 251, 251);
+    --color-secondary: rgb(216, 142, 5);
+    --text-color: #000;
+    --color-white: #fff;
+    --color-black: #000;
+    --box-shadow-1: 0 3px 15px rgba(255, 255, 255, 0.4);
+ }
+ 
+ body {
+    background-color: var(--color-white);
+    font-family: FuturaBook;
+    font-size: 1.1rem;
+    color: var(--text-color);
+ }
