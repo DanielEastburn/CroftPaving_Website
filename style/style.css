@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: rgb(251, 251, 251);
-  --color-secondary: rgb(216, 142, 5);
+  --color-secondary: #c6a246;
   --text-color: #000;
   --color-white: #fff;
   --color-black: #000;
@@ -114,6 +114,50 @@ body {
   background-image: linear-gradient(to bottom left, gold, white, gold);
   padding: 20px 40px;
   border-radius: 5px;
+}
+
+.featured-section {
+  background-image: url("/img/brickwork.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.featured-section .featured-container {
+  display: flex;
+  justify-content: space-between;
+  width: 1140px;
+}
+.featured-section .featured-container .featured-right {
+  padding: 0 35px;
+}
+
+.block-section {
+  width: 100vw;
+  display: flex;
+}
+.block-section .block-container {
+  display: flex;
+}
+.block-section .block-container .block-link {
+  position: relative;
+}
+.block-section .block-container .block-link img {
+  width: 475px;
+}
+.block-section .block-container .block-link:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, gold, white, gold);
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=style.css.map */
