@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
+   //  list-style: none;
  }
  
  :root {
@@ -226,4 +226,102 @@
          font-size: 1.5rem;
       }
    }
+}
+
+.service-section{
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+
+   .service-container{
+      margin: 100px 0;
+      width: 1120px;
+      display: flex;
+
+      .service-left{
+         flex: 1;
+         color: var(--color-secondary);
+         margin: 0 10px;
+         font-size: 1.5rem;
+
+      }
+
+      .service-right{
+         flex: 2;
+         color: grey;
+         .service-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            list-style-position: inside;
+            li{
+               margin-bottom: 30px;
+            }
+         }      
+
+
+      }
+
+   }
+   
+}
+
+.area-section{
+   background-image: url("/img/area.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 300px;
+
+   .area-container{
+      width: 1120px;
+      display: flex;
+      .location-icon{
+         flex: 1;
+         display: flex;
+         justify-content: center;
+         align-items: flex-start;
+         font-size: 4rem;
+         color: var(--color-secondary);
+      }
+
+      .area-caption{
+         flex: 6;
+         display: flex;
+         flex-direction: column;
+
+         h1{
+            color: var(--color-secondary);
+            font-size: 2.5rem;
+            line-height: 35px;
+            margin-bottom: 20px;
+         }
+
+         p{
+            color: lightgrey;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+         }
+
+         ul{
+            display: flex;
+            list-style-position: inside;
+            color: lightgrey;
+            li{
+               margin-right: 30px;
+               font-size: 1.2rem;
+            }
+         }
+      }
+   }
+}
+
+.footer-section{
+   
 }
