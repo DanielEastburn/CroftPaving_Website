@@ -29,7 +29,7 @@ body {
   height: 750px;
   width: 100vw;
   color: #fff;
-  border-bottom: 15px gold solid;
+  border-bottom: 15px var(--color-secondary) solid;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -115,9 +115,19 @@ body {
   margin: 20px 0;
 }
 .header-section .header-featured .featured-container p {
-  background-image: linear-gradient(to bottom left, gold, white, gold);
+  background-image: linear-gradient(to bottom left, var(--color-secondary), white, var(--color-secondary));
   padding: 20px 40px;
   border-radius: 5px;
+}
+.header-section .header-featured .featured-container p a {
+  text-decoration: none;
+  color: #fff;
+}
+.header-section .header-featured .featured-container p:hover {
+  background-image: linear-gradient(to bottom left, grey, rgb(225, 225, 198), var(--color-secondary));
+}
+.header-section .header-featured .featured-container p:hover a {
+  color: #000;
 }
 
 .featured-section {
